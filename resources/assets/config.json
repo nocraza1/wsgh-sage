@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
-  "devUrl": "demo-ariel.illbenext.solutions",
+  "publicPath": "/app/themes/wsgh-sage",
+  "devUrl": "ibinextemplate.com",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

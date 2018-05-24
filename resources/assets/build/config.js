@@ -14,7 +14,7 @@ const rootPath = (userConfig.paths && userConfig.paths.root)
 const config = merge({
   open: true,
   copy: 'images/**/*',
-  proxyUrl: 'demo-ariel.illbenext.solutions',
+  proxyUrl: 'ibinextemplate.com',
   cacheBusting: '[name]_[hash]',
   paths: {
     root: rootPath,

@@ -1,3 +1,5 @@
-<div class="page-header">
-  <h1>{!! App::title() !!}</h1>
+<div class="page-header height-40percent">
+
+  <h1 class="text-center">{!! App::title() !!}</h1>
+  
 </div>
