@@ -10,6 +10,10 @@ $title_color: #5b5847;
 //   margin: 0;
 // }
 
+body {
+  background: url(http://ibinextemplate.com/app/uploads/2018/05/texture-img.png) $background_header_footer;
+}
+
 .span-inside-relative {
   font-size: 10px;
   margin: 0 11px;
@@ -20,16 +24,74 @@ $title_color: #5b5847;
 }
 
 .nav-menu {
+  display: inline-block;
   margin: 0 auto;
   position: relative;
   bottom: 14px;
+  padding: 0 5px;
+  // width: 50%;
+  background: url(http://ibinextemplate.com/app/uploads/2018/05/texture-img.png) $background_header_footer;
 
   li {
     display: inline-block;
     padding: 0 5px;
+
+    a {
+      color: $black;
+      padding: 3px 12px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: $uppermost_top_color;
+      border-radius: 13px;
+      color: $white;
+    }
   }
 }
+
+.btn-book-your-stay {
+  background-color: #bc5646;
+  color: white;
+}
+
+.btn-book-your-stay:hover {
+  color: black;
+}
+
 // carousel styles
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
 div#carouselExampleIndicators {
   position: absolute;
   bottom: 39%;
@@ -79,6 +141,7 @@ div#carouselExampleIndicators {
     height: 15%;
     border-radius: 50%;
     margin: auto 0;
+    width: 12%;
   }
 
   .carousel-control-next {
@@ -87,6 +150,7 @@ div#carouselExampleIndicators {
     height: 15%;
     border-radius: 50%;
     margin: auto 0;
+    width: 12%;
   }
 }
 // carousel styles
@@ -99,6 +163,14 @@ div#carouselExampleIndicators {
 
 .float-right {
   float: right;
+}
+
+.padding-right-187px {
+  padding-right: 187px;
+}
+
+.padding-0-182px {
+  padding: 0 182px;
 }
 
 .color-5B5847 {
@@ -159,6 +231,14 @@ div.height-30percent {
 .homepage-card {
   margin: 0 19px;
   border-radius: 10px;
+}
+
+.panels-after-separator {
+  display: inline-block;
+  background: url(http://ibinextemplate.com/app/uploads/2018/05/texture-img.png) $background_header_footer;
+  position: relative;
+  bottom: 16px;
+  padding: 0 5px;
 }
 
 div.height-40percent {
