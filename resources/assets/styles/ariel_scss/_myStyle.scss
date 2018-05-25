@@ -23,6 +23,10 @@ body {
   }
 }
 
+.brand:hover {
+  color: $title_color;
+}
+
 .nav-menu {
   display: inline-block;
   margin: 0 auto;
@@ -57,6 +61,11 @@ body {
 
 .btn-book-your-stay:hover {
   color: black;
+}
+
+.mapouter {
+  margin-bottom: 11px;
+  border-radius: 9px;
 }
 
 // carousel styles
@@ -101,7 +110,6 @@ div#carouselExampleIndicators {
   padding: 5px;
 
   .carousel-indicators {
-    // background-color: $black;
     bottom: -44px;
   }
 
@@ -136,7 +144,7 @@ div#carouselExampleIndicators {
   }
 
   .carousel-control-prev {
-    left: -67%;
+    left: -56%;
     background-color: $black;
     height: 15%;
     border-radius: 50%;
@@ -145,7 +153,7 @@ div#carouselExampleIndicators {
   }
 
   .carousel-control-next {
-    right: -67%;
+    right: -56%;
     background-color: $black;
     height: 15%;
     border-radius: 50%;
@@ -158,7 +166,6 @@ div#carouselExampleIndicators {
 .relative-top {
   position: relative;
   bottom: 25px;
-  // height: 50%;
 }
 
 .float-right {
@@ -169,6 +176,10 @@ div#carouselExampleIndicators {
   padding-right: 187px;
 }
 
+.font-size-13px {
+  font-size: 13px;
+}
+
 .padding-0-182px {
   padding: 0 182px;
 }
@@ -177,17 +188,23 @@ div#carouselExampleIndicators {
   color: $title_color;
 }
 
+.color-868870 {
+  color: #868870;
+}
+
 .font-oswald {
   font-family: 'Oswald', calibri, helvetica, arial, sans-serif;
 }
 
 a.brand {
-  // display: none;
+  h1 {
+    font-size: 3.7rem;
+    margin-bottom: 42px;
+    letter-spacing: -3px;
+  }
 }
-// .bg-textured-
 
 a.brand:hover {
-  // display: none;
   text-decoration: none;
 }
 
@@ -208,6 +225,10 @@ div.height-30percent {
   height: 30%;
 }
 
+div.height-33percent {
+  height: 33%;
+}
+
 .height-27percent {
   height: 27%;
 }
@@ -220,6 +241,14 @@ div.height-30percent {
   height: 10%;
 }
 
+.height-16percent {
+  height: 16%;
+}
+
+.height-32percent {
+  height: 32%;
+}
+
 .height-1percent {
   height: 1%;
 }
@@ -228,9 +257,28 @@ div.height-30percent {
   max-width: 30%;
 }
 
+.TA_selfserveprop {
+  padding-left: 30px;
+  margin-bottom: 19px;
+}
+
+.link-get-directions {
+  color: #c9844f;
+}
+
+.link-get-directions:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .homepage-card {
   margin: 0 19px;
   border-radius: 10px;
+
+  p,
+  h4 {
+    margin-bottom: 0;
+  }
 }
 
 .panels-after-separator {
@@ -241,8 +289,16 @@ div.height-30percent {
   padding: 0 5px;
 }
 
+.bottom-23px {
+  bottom: 23px;
+}
+
 div.height-40percent {
   height: 40%;
+}
+
+.height-33percent {
+  height: 33%;
 }
 
 div.width-40percent {
