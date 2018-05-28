@@ -60,6 +60,11 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav-menu']) !!}
       @endif
     </nav>
+
+    @if(is_front_page())
+    	<div class="height-287px"></div>
+    @endif
+    
   </div>
   
 </header>

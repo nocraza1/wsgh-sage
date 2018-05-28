@@ -103,18 +103,18 @@ Container::getInstance()
 function prefix_register_name() {
 
     $labels = array(
-        'name'               => __( 'Plural Name', 'text-domain' ),
-        'singular_name'      => __( 'Singular Name', 'text-domain' ),
-        'add_new'            => _x( 'Add New Image', 'text-domain', 'text-domain' ),
-        'add_new_item'       => __( 'Add New Singular Name', 'text-domain' ),
-        'edit_item'          => __( 'Edit Singular Name', 'text-domain' ),
-        'new_item'           => __( 'New Singular Name', 'text-domain' ),
-        'view_item'          => __( 'View Singular Name', 'text-domain' ),
-        'search_items'       => __( 'Search Plural Name', 'text-domain' ),
+        'name'               => __( 'Rooms', 'text-domain' ),
+        'singular_name'      => __( 'Room', 'text-domain' ),
+        'add_new'            => __( 'Add New Room', 'text-domain', 'text-domain' ),
+        'add_new_item'       => __( 'Add New Room', 'text-domain' ),
+        'edit_item'          => __( 'Edit Room', 'text-domain' ),
+        'new_item'           => __( 'New Room', 'text-domain' ),
+        'view_item'          => __( 'View Room', 'text-domain' ),
+        'search_items'       => __( 'Search Rooms', 'text-domain' ),
         'not_found'          => __( 'No Plural Name found', 'text-domain' ),
         'not_found_in_trash' => __( 'No Plural Name found in Trash', 'text-domain' ),
-        'parent_item_colon'  => __( 'Parent Singular Name:', 'text-domain' ),
-        'menu_name'          => __( 'Gallery', 'text-domain' ),
+        'parent_item_colon'  => __( 'Parent Room:', 'text-domain' ),
+        'menu_name'          => __( 'Rooms', 'text-domain' ),
     );
 
     $args = array(
@@ -138,12 +138,12 @@ function prefix_register_name() {
         'capability_type'     => 'post',
         'supports'            => array(
             'title',
-            'editor',
-            'author',
+            // 'editor',
+            // 'author',
             'thumbnail',
-            'excerpt',
+            // 'excerpt',
             'custom-fields',
-            'trackbacks',
+            // 'trackbacks',
             'comments',
             'revisions',
             'page-attributes',
@@ -151,7 +151,9 @@ function prefix_register_name() {
         ),
     );
 
-    register_post_type( 'slug', $args );
+    register_post_type( 'rooms', $args );
 }
 
 add_action( 'init', 'prefix_register_name' );
+
+

@@ -1,4 +1,4 @@
-<div class="page-header height-33percent bg-FFFEC7">
+<div class="page-header height-3percent">
 
 	<div class="container">
 		
