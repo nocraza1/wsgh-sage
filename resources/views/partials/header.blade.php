@@ -65,7 +65,7 @@
     	<div class="height-287px"></div>
     @endif
 
-    @if(is_page( array( 'about', 140, 142 )))
+    @if(is_page( array( 'about', 27, 25 )))
     <div class="bg-black"></div>
     <div class="relative-top text-center"></div>
       @if (has_nav_menu('about_navigation'))
