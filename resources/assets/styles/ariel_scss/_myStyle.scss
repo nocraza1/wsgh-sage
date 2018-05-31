@@ -82,6 +82,10 @@ body {
   color: black;
 }
 
+.about-menu > li > a:active { //had to separate this to solve linting issues
+  color: white;
+}
+
 .btn-book-your-stay {
   background-color: #bc5646;
   color: white;
