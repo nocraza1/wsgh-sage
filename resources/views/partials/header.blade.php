@@ -64,7 +64,15 @@
     @if(is_front_page())
     	<div class="height-287px"></div>
     @endif
-    
+
+    @if(is_page( array( 'about', 140, 142 )))
+    <div class="bg-black"></div>
+    <div class="relative-top text-center"></div>
+      @if (has_nav_menu('about_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'about_navigation', 'menu_class' => 'about-menu link-get-directions']) !!}
+      @endif
+    @endif
+
   </div>
   
 </header>

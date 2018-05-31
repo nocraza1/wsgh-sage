@@ -15,7 +15,11 @@
     		<div class="padding-15px">
 		    	<h1 class="text-left">{!! App::title() !!}</h1>
 		    	@include('partials.content-page')
-    			
+
+          <h1>
+            
+            <!-- {!! get_the_ID() !!} -->
+          </h1>
     		</div>
     	</div>
     </div>
