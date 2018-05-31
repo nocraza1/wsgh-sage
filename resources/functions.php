@@ -156,8 +156,7 @@ function prefix_register_name() {
 
 add_action( 'init', 'prefix_register_name' );
 
-
-// this function initializes the iframe elements
+// this function initializes the iframe elements 
 
 function add_iframe($initArray) {
 $initArray['extended_valid_elements'] = "iframe[id|class|title|style|align|frameborder|height|longdesc|marginheight|marginwidth|name|scrolling|src|width]";
@@ -166,5 +165,3 @@ return $initArray;
 
 // this function alters the way the WordPress editor filters your code
 add_filter('tiny_mce_before_init', 'add_iframe');
-
-
